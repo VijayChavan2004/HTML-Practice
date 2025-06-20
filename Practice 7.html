@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    
+    <table border="black">
+        <caption>Student Information</caption>
+        <div>
+            <tr>
+                <th rowspan="6">Info</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <td >City</td>
+                <td>House</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Kolkata</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+        </div>
+    </table>
+    <br>
+    <br>
+    <form action="/server">
+        <label for="txt">Name : </label>
+        <input type="text" id="txt" name="txt" />
+        <br>
+        <label for="sex"> Sex : </label>
+        <input type="radio" name="sex" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="female" value="female" />
+        <label for="female">Female</label>
+    <br>
+    <label for="country">Country: </label> 
+    <select name="country" id="country"> 
+    <option>Select an option</option> 
+    <option value="india">India</option> 
+    <option value="usa">USA</option> 
+    <option value="nepal">Nepal</option> 
+    <option value="canada">Canada</option> 
+    </select> 
+    <br>
+    <label for="message">Message:</label><br /> 
+    <textarea name="message" id="message" cols="30" 
+        rows="4"></textarea>
+    <br>
+
+    <input type="checkbox" name="newsletter" id="newsletter" /> 
+    <label for="newsletter">Subscribe?</label> 
+    <br>
+    <button>Submit</button>
+    </form>
+</body>
+</html>
